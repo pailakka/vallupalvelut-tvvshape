@@ -37,8 +37,8 @@ if os.path.exists(os.path.join(TMP_PATH,'kalkati_flags.txt')):
 for k in kalkati_flags:
     kalkati_flags_parsed[k] = parseFlag(kalkati_flags[k])
 
-if not os.path.exists('tmp'):
-    os.makedirs('tmp')
+if not os.path.exists(TMP_PATH):
+    os.makedirs(TMP_PATH)
 naviciftp = None
 
 opener = urllib2.build_opener(urllib2.CacheFTPHandler)
